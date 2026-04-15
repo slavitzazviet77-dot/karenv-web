@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+
+  background: linear-gradient(
+      rgba(0,0,0,0.35),
+      rgba(0,0,0,0.35)
+    ),
+    url("img/fondo.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  color: white;
+}
+
+/* LOGO */
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+/* REDES */
+.redes-top {
+  position: absolute;
+  top: 25px;
+  left: 180px;
+  display: flex;
+  gap: 15px;
+}
+
+.redes-top a {
+  color: white;
+  font-size: 18px;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.redes-top a:hover {
+  transform: scale(1.2);
+}
+
+/* CONTENIDO */
+.contenido {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+}
+
+.contenido h1 {
+  font-size: 80px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+/* SUBTÍTULO */
+.subtitulo {
+  font-size: 16px;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+  color: #d4a25a;
+}
+
+/* BOTÓN */
+.btn-catalogo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 30px;
+  background: #d4a25a;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn-catalogo i {
+  font-size: 20px;
+}
+
+.btn-catalogo:hover {
+  background: #b8864a;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .contenido {
+    left: 20px;
+  }
+
+  .contenido h1 {
+    font-size: 45px;
+  }
+
+  .redes-top {
+    left: 120px;
+  }
+}
